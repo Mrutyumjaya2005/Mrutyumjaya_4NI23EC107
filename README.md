@@ -47,9 +47,25 @@ W = 1.08um and L=500nm.
 
 source voltage = 1.8v and 0.9v
 
+P = V * I
+
+I = P / V
+
+I = 50μW / 1.8V
+
+I = 27.7μA
+
 ## AC Analysis :
 
 <img width="953" alt="image" src="https://github.com/user-attachments/assets/b86adc96-28af-4287-9771-9cff6d3ec8e2" />
+
+1.Sweep Type = Decade.
+
+2. Number of Points per Decade = 20.
+
+3. Start Frequency = 0.1 Hz.
+
+4. Stop Frequency = 1THz
 
 ## Transient Analysis :
 
@@ -68,17 +84,31 @@ GIVEN : power= 50um, l=500nm, vdd= 1.8v.
 so that P=VI, I=2.7*e-5 after calculation.
 
 Frequency 1 kHz, V1=1.8V, V2=0.6V.
+## Circuit 2 :
+<img width="757" alt="image" src="https://github.com/user-attachments/assets/4011a599-cd02-43c8-898f-094c58a4eee4" />
+
+
+## DC Analysis :
+<img width="929" alt="image" src="https://github.com/user-attachments/assets/b435384d-9cbd-4441-a93c-d9aadcda0d6b" />
+
+## Transient Analysis : 
+
+## Input Waveform : 
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/de1e6927-c5ab-4814-b2ed-77e05395f981" />
+
+## Output Waveform :
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/841e355b-8a60-47c5-8bf3-759d59d3d429" />
+
+## AC Analysis : 
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/247f6925-8b3a-4d8d-ae98-2ce946499129" />
+
+## Gain :
+<img width="494" alt="image" src="https://github.com/user-attachments/assets/32a65f14-0136-40c4-bc09-577375b91196" />
+
+
 
 ## Inference :
 
-1. In a MOSFET, during the saturation region, the drain current (Id) is directly proportional to the channel width (W) and varies linearly with the W/L ratio. Our task is to find the W value using the given values of L, Id, V1, and V2.  
+In a MOSFET, during the saturation region, the drain current (Id) is directly proportional to the channel width (W) and varies linearly with the W/L ratio. Our task is to find the W value using the given values of L, Id, V1, and V2. A MOSFET works as an amplifier only in the saturation region. By performing DC analysis on a given circuit, we can determine the DC operating point. AC analysis helps determine parameters such as bandwidth and gain. These values can be extracted from the given graph. Transient analysis provides the input and output waveforms, allowing us to determine voltage values. The MOSFET gain increases with the mid-band frequency range.
 
-2. A MOSFET works as an amplifier only in the saturation region. By performing DC analysis on a given circuit, we can determine the DC operating point.  
 
-3. AC analysis helps determine parameters such as bandwidth and gain. These values can be extracted from the given graph.  
-
-4. Transient analysis provides the input and output waveforms, allowing us to determine voltage values. The MOSFET gain increases with the mid-band frequency range.  
-
-5. From the analysis, we determine the Q-point as (1.644V, 2.7 × 10⁻⁵ A), with Vout = 0.5V and Vin = 200mV.
-
-## Circuit 2 :
