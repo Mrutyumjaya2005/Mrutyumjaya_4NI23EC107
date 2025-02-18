@@ -71,12 +71,14 @@ Frequency 1 kHz, V1=1.8V, V2=0.6V.
 
 ## Inference :
 
-1. A MOSFET works as an amplifier only in the saturation region. By performing DC analysis on a given circuit, we can determine the DC operating point.  
+1. In a MOSFET, during the saturation region, the drain current (Id) is directly proportional to the channel width (W) and varies linearly with the W/L ratio. Our task is to find the W value using the given values of L, Id, V1, and V2.  
 
-2. In a MOSFET, during the saturation region, the drain current (Id) is directly proportional to the channel width (W) and varies linearly with the W/L ratio. Our task is to find the W value using the given values of L, Id, V1, and V2.  
+2. A MOSFET works as an amplifier only in the saturation region. By performing DC analysis on a given circuit, we can determine the DC operating point.  
 
 3. AC analysis helps determine parameters such as bandwidth and gain. These values can be extracted from the given graph.  
 
 4. Transient analysis provides the input and output waveforms, allowing us to determine voltage values. The MOSFET gain increases with the mid-band frequency range.  
 
 5. From the analysis, we determine the Q-point as (1.644V, 2.7 × 10⁻⁵ A), with Vout = 0.5V and Vin = 200mV.
+
+## Circuit 2 :
