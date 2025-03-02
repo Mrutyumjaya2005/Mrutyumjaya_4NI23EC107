@@ -32,7 +32,7 @@ A NMOS common-source (CS) amplifier amplifies small input signals by operating t
 
 6.After that lets take Transient analysis of 5m cycle so in input and output waveforms in 5 complete cycle, so here we get and seperate and combined waveforms of input and output.
 
-7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform( 0.6,50m,1T),after that select the AC simulation from the given options of simulation after giving values of ( Decade,20,01,1T).So we will get a output after placing node to output waveform .
+7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform (1.2,50m,1T),after that select the AC simulation from the given options of simulation after giving values of ( Decade,20,01,1T).So we will get a output after placing node to output waveform .
 
 8.Here we put the values of l=500nm,w=1.08um,etc
 
@@ -167,7 +167,7 @@ Here Ad is differential gain
 
 6.After that lets take Transient analysis of 5m cycle so in input and output waveforms in 5 complete cycle, so here we get and seperate and combined waveforms of input and output.
 
-7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform( 0.6,50m,1T),after that select the AC simulation from the given options of simulation after giving values of (Decade,20,01,1T). So we will get a output after placing node to output waveform .
+7.For AC analysis, we should do some changes like converting DC SOURCE to sinosoidal waveform (1.2,50m,1T),after that select the AC simulation from the given options of simulation after giving values of (Decade,20,01,1T). So we will get a output after placing node to output waveform .
    
 ## Circuit 1 : 
 
@@ -191,13 +191,13 @@ vocm2 = 1.25 V
 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/ef69bdd7-b670-46f3-aeee-594077248434" />
 
-Vin p-p = 
+Vin = 1.25 - 1.15 V
 ​
 ### output waveform :
 
 <img width="958" alt="image" src="https://github.com/user-attachments/assets/707c6743-8837-4a8f-ab7d-4ebffa7cc3c7" />
 
-Vout p-p = 
+Vout = 1.32 - 1.18 V
 
 ### Input and Output combined waveforms :
 
@@ -205,8 +205,14 @@ Vout p-p =
 
 Gain = Vout / Vin 
 
-     = 
+     = (1.32 - 1.18) / (1.25 - 1.15)
 
+     = 1.4 
+
+Gain in dB = 20 * log (1.4)
+
+           = 2.92 dB
+           
 ## AC Analysis :
 
 <img width="956" alt="image" src="https://github.com/user-attachments/assets/30515397-0c44-4db9-9fb8-5ceaca1d5a57" />
@@ -219,13 +225,13 @@ Gain = Vout / Vin
 
 <img width="476" alt="image" src="https://github.com/user-attachments/assets/b4a5c03f-b720-4f49-ab0b-f8447bfdf0bb" />
 
-Id1 = 
+Id1 = 0.5 mA
 
-Id2 = 
+Id2 = 0.5 mA
 
-Vocm =  
+Vocm =  1.25 V
 
-vocm2 =  
+vocm2 =  1.25 V
 
 ## Transient Analysis :
 
@@ -233,13 +239,13 @@ vocm2 =
 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/303feebc-8d6d-4900-a5eb-d8358d1b2a00" />
 
-Vin p-p = 
+Vin = 1.25 - 1.15 V
 
 ### Output waveform :
 
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/f4effb79-c054-4d6c-b046-25b8c6eafb3b" />
 
-Vocm = 
+Vocm = 1.44 -1.04
 
 ### Input and Output combined waveforms :
 
@@ -247,7 +253,14 @@ Vocm =
 
 Gain = vocm / Vin 
 
-     = 
+     = (1.44 - 1.04) / (1.25 - 1.15)
+
+     = 4
+
+Gain in dB = 4 * log (1.4)
+
+           = 12.04 dB
+           
 
 ## AC Analysis :
 
@@ -262,13 +275,13 @@ Gain = vocm / Vin
 
 <img width="476" alt="image" src="https://github.com/user-attachments/assets/71235100-a527-4b8d-8dba-92873747affb" />
 
-Id1 = 
+Id1 = 0.5 mA 
 
-Id2 = 
+Id2 = 0.5 mA
 
-Vocm =  
+Vocm =  1.25 V
 
-vocm2 =  
+vocm2 = 1.25 V 
 
 ## Transient Anaysis :
 
@@ -276,13 +289,13 @@ vocm2 =
 
 <img width="957" alt="image" src="https://github.com/user-attachments/assets/b2c0c423-6897-46be-b74d-94518ef990f5" />
 
-Vin p-p = 
+Vin = 1.25 - 1.15
 
 ### Output waveform :
 
 <img width="956" alt="image" src="https://github.com/user-attachments/assets/c34cc8ac-4c2f-4424-8dd0-47caad2f9770" />
 
-Vout p-p = 
+Vout = 1.44 - 1.04
 
 ### Input and Output combined waveform :
 
@@ -290,10 +303,25 @@ Vout p-p =
 
 Gain = vocm / Vin 
 
-     = 
+     = (1.44 - 1.04) / (1.25 - 1.15)
+
+     = 4
+
+Gain in dB = 4 * log (1.4)
+
+           = 12.04 dB
+           
 
 ## AC Analysis :
 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/49dbdf2f-e301-4c39-a878-a3e129983475" />
 
+## Inference 
 
+1.Differential Gain – The amplifier provides significant gain for differential signals, confirming its suitability for applications requiring precise signal amplification.
+
+2.Common-Mode Rejection – The circuit successfully suppresses common-mode signals, making it ideal for noise-resistant applications.
+
+3.Biasing and Stability – Proper biasing ensures stable operation, and any variations in resistor values or transistor parameters influence the gain.
+
+4.Practical Limitations – Small deviations from theoretical values were observed due to component tolerances, non-ideal transistor characteristics, and power supply variations.
